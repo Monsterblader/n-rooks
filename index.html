@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>n-rooks solver</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="lib/jquery-1.8.3.js"></script>
+  <script src="lib/underscore.js"></script>
+  <script src="lib/mustache.js"></script>
+  <script src="lib/backbone.js"></script>
+  <script src="js/ChessboardModel.js"></script>
+  <script src="js/ChessboardView.js"></script>
+  <script src="js/app.js"></script>
+<!--  <script src="js/nRooksSolver.js"></script> -->
+  <script src="js/nQueensSolver.js"></script>
+</body>
+  What size board would you like to test?<br>
+  <input type="text" id="boardSize"></input><br>
+  How long would you like to display each configuration while testing?<br>
+  (Leave this value blank to not display this process.)<br>
+  <input type="text" id="solveDelay"></input><br>
+  How long would you like to display each solution in msec?<br>
+  (The default value is 500 msec.)<br>
+  <input type="text" id="displayDelay"></input><br>
+  <button type="button" onclick="solveforQueens(false)">Run rooks test</button><br>
+  <button type="button" onclick="solveforQueens(true)">Run queens test</button><br>
+  <div id="timeElapsed"></div>
+</html>
